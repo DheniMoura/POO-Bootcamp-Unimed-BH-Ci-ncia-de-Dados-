@@ -29,15 +29,17 @@ class Cachorro:
     def __del__(self):
         print("Destruindo a instância")
 
+
+# Nesse exemplo o objeto é excluído na sequência
 def criar_cachorro():
         c = Cachorro("Zeus", "Branco", True)
         print(c.nome)
 
 
-# c1 = Cachorro("Boby", "Merlin", True)
-# print(c1.latir())
-# c2 = Cachorro("Mila", "Caramelo", False)
+c1 = Cachorro("Boby", "Merlin", True)
+print(c1.latir())
+c2 = Cachorro("Mila", "Caramelo", False)
 
-# del c2
+del c2
 
 criar_cachorro()
